@@ -27,7 +27,9 @@ void App_uart_Receive(const uint8_t* packet, uint16_t length)
 ```
 
 ### 3. 自定义数据类型
+```
 enum UartHandle{
  ...
  MaxHandle
 }
+```

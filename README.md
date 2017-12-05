@@ -15,11 +15,13 @@ App_uart_Receive(const uint8_t* packet, uint16_t length);
 ```
 
 ##### 需要自己实现的
-### 1.
+### 1. 将底层发送数据的函数，写入此函数
+```
 void LinkLayer_Send(packet, length)
 {
-  ···
+  ...
 }
+```
 
 ### 2.在底层接收数据的接口，将数据，数据长度传入函数
 ```
